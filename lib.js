@@ -2,11 +2,9 @@ import fs from "fs";
 import axios from "axios";
 import "dotenv/config";
 import Papa from "papaparse";
-import {BASE_API} from './endpoints.js'
+import { BASE_API } from "./endpoints.js";
 
 const bearer_authorization = `Authorization: Bearer ${process.env.TURTL_TOKEN}`;
-// export const BASE_API = "https://careers.turtl.co/api/v1";
-
 
 export const readCSVAsync = async (fileLocation) => {
   try {
@@ -25,7 +23,7 @@ export const readCSVAsync = async (fileLocation) => {
   }
 };
 
-export const createdPersonalizedDocument = async (docId, docUrl, docData) => {
+export const createPersonalizedDocument = async (docId, docUrl, docData) => {
   try {
     const payload = {
       bearer_authorization,
