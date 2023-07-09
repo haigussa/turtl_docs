@@ -1,0 +1,19 @@
+{
+  "name": "turtl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "personalizeDocument.js",
+  "scripts": {
+    "personalize": "node personalizeDocument.js",
+    "getDocuments": "node getPersonalizedDocuments.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "papaparse": "^5.4.1"
+  },
+  "type": "module"
+}

@@ -1,0 +1,1 @@
+export const BASE_API = "https://careers.turtl.co/api/v1";
