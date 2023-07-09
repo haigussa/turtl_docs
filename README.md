@@ -61,13 +61,15 @@ Here the main points you will need to know about how this code is organized:
 
 - Once you are there you will need to run the following command `npm run personalize` or  `node personalizeDocument.js`. This will execute the code in the 'personalizeDocument.js' file. 
 
-- Once you create the documents, if you want to get all the personalized documents, you can run the command `npm run getDocuments` or `node getPersonalizedDocuments.js` from you command line. Besides logging the documents onto your command line, this will also save the details of the documents as a JSON file under the name `personalizedDocuemtn.json` in the root of your file. 
+- Once you create the documents, if you want to get all the personalized documents, you can run the command `npm run getDocuments` or `node getPersonalizedDocuments.js` from you command line. Besides logging the documents onto your command line, this will also save the details of the documents as a JSON file under the name `personalizedDocuemetn.json` in the root of your file. 
   
 - Please note that this script is written for one document ID and document URL. But if you ever have a different doc, feel free to modify the constants/variables `DOC_ID` and `DOC_URL` which are located on the top of the JavaScript file named `personalizeDocument.js`.
 
 - When the personalizeDocument script runs, it will use other functions defined in the 'lib.js' file
 
-- During code execution, the status of the code will be logged/saved in the "outputs" folder. Each time you run the code that create the personalized document, a new CSV file will be generated in the output folder, documenting the status of each document. This log serves as a helpful resource to review completed work and identify any failures. It is also beneficial for future reference. However, it is important to periodically clear this folder as it can clutter the folder with a lot of files.
+- During code execution, the status of the code will be logged/saved in the "output" folder. Each time you run the code that create the personalized document, a new CSV file will be generated in the output folder, documenting the status of each document. To avoid any complications, this CSV file uses tabs as delimiters, meaning that the values within the file are separated by tabs. 
+
+- The log file may serve as a useful tool for reviewing completed tasks and identifying any failures. Additionally, it can serve as a future reference in case we may want to check what happened in the recent past. However, it is advisable to periodically declutter the 'outpu' folder by removing the files to prevent excessive file accumulation, which may not be fun to work with.
 
 Just in case you are curious about the seemingly random number at the end of the file, it is actually a timestamp indicating the approximate time when the code was executed. If you have to find out when this code has run for some reason in the futre, all you have to do is convert this time stamp to date.
 

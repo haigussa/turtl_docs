@@ -19,7 +19,6 @@ const createPersonalizationFromCSVFile = async (csvLocation) => {
         docData
       );
       const fields = response.data.fields;
-      console.log(fields)
       writeStream.write(
         `${fields.name}\t${fields.company}\t${fields['logo-domain']}\t${fields.sector}\t${response.statusText}\n`
       );
