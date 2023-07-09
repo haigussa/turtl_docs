@@ -22,7 +22,7 @@ const createPersonalizationFromCSVFile = async (csvLocation) => {
       writeStream.write(
         `${fields.name}\t${fields.company}\t${fields['logo-domain']}\t${fields.sector}\t${response.statusText}\n`
       );
-      console.log(response.status);
+      console.log(`Name: ${fields.name}, Company: ${fields.company}, ${response.statusText}`);
     } catch (err) {
       writeStream.write(
         `${docData.name}\t${docData.company}\t${docData.logo}\t${docData.sector}\t${err.message}\n`
